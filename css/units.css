@@ -1,3 +1,13 @@
+html {
+  /* height: 1000px; */
+  /* height: 100%; */
+
+  /*? ROOT */
+  /** html nin default font size'ı 16px */
+
+  /* font-size: 30px; */
+}
+
 body {
   background-color: #bebe;
 
@@ -9,6 +19,7 @@ body {
   /*? body'ye yukseklik olarak vh cinsinden bir yukseklik verilebilir. Bu durumda alt telementlerde %'lik yukseklik kullanmak mümkün olur. */
   height: 100vh;
 }
+
 h1 {
   color: red;
   /*! Default 32px */
@@ -52,4 +63,40 @@ p.percent {
   width: 90vw;
   /** vh'da parent yerine viewport'un yuksekligine bakilir. 10vh, tarayicinin gorunur yuksekliginin %10'u demektir*/
   height: 10vh;
+}
+
+/*!  EM olcu biriminde bir html elemaninin font size'i parent'in font-size'ina gore oranlanir. */
+
+.div4 {
+  background-color: indigo;
+  color: white;
+  /*?  Parent'in (body) 1 katina esittir (16 px) */
+  font-size: 1em;
+  width: 150px;
+}
+
+.div5 {
+  background-color: lightblue;
+  color: white;
+  font-size: 2em;
+  /* width: 1.5em; */
+}
+.div6 {
+  background-color: yellowgreen;
+  color: white;
+  /* font-size: 0.5em; */
+  font-size: 3em;
+}
+
+/*!  REM olcu biriminde bir html elemaninin font size'i root elemaninin (html) font-size'ina gore oranlanir. */
+
+.div7 {
+  font-size: 1rem; /*?  16px * 1 = 16px */
+}
+
+.div8 {
+  font-size: 2rem; /*?  16px * 2 = 32px */
+}
+.div9 {
+  font-size: 3rem; /*?  16px * 3 = 48px */
 }
